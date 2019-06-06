@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="log">
+    <div>
+        <h2>LOOK OUT</h2>
+        <p>Ready to manage </p>
+        <p>Follow us on instagram </p>
+        <p>&copy 2018 Lookout.com</p>
+    </div>
+</div>
+<div class="log_sign_task">
+    <div class="login_signup">
+        <fieldset class="login_signup">
+            <legend>Login</legend>
+            <form action="" method="post">{% csrf_token %}
+                <div class="inlog">{{ form.as_p }}</div>
+                <button class = "btn" type="submit">Login</button>
+            </form>
+        </fieldset>
+    </div>
+</div>
+{% endblock content%}

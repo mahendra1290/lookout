@@ -2,7 +2,8 @@ body{
     background-image:url("app.jpg");
     background-size:100% 100%;
     background-attachment:fixed;
-    font-family: Bahnschrift;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;

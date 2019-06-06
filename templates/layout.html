@@ -5,17 +5,19 @@
     <meta charset="utf-8">
     <title>To Do App</title>
     {% load static %}
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:
+rel="stylesheet">
     <link href="{% static 'main.css' %}" rel="stylesheet">
     <div class="header">
       <div class="navigation">
         <div class="left_nav">
           <span id="look">LOOK OUT &reg</span>
-          <span><a class="nav" href="/home/">Home</a></span>
-          <span><a class="nav" href="/login/">Login</a></span>
+          <span><a class="nav" href="{% url 'home' %}">Home</a></span>
+          <span><a class="nav" href="{% url 'login' %}">Login</a></span>
         </div>
         <div class="right_nav">
           <span ><a class="nav" href="/signup/">Register</a></span>
-          <span ><a class="nav" href="/about/">About</a></span>
+          <span ><a class="nav" href="{% url 'about' %}">About</a></span>
         </div>
     </div>
   </div>

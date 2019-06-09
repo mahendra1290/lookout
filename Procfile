@@ -1,2 +1,1 @@
-web: gunicorn look_out.wsgi --log-file-
-
+web: gunicorn look_out.wsgi

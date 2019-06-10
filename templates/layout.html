@@ -13,7 +13,12 @@ rel="stylesheet">
         <div class="left_nav">
           <span id="look">LOOK OUT &reg</span>
           <span><a class="nav" href="{% url 'home' %}">Home</a></span>
+          {% if user.is_authenticated %}
+          <span><a class="nav" href="{% url 'home' %}">{{ user.username }}</a></span>
+          <span><a class="nav" href="{% url 'logout' %}">Log out</a></span>
+         {% else %}
           <span><a class="nav" href="{% url 'login' %}">Login</a></span>
+          {% endif %}
         </div>
         <div class="right_nav">
           <span ><a class="nav" href="/signup/">Register</a></span>

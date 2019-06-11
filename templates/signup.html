@@ -1,5 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
+{% load crispy_forms_tags %}
 <div class="log">
     <div>
         <h2>LOOK OUT</h2>
@@ -13,8 +14,8 @@
         <fieldset class="login_signup">
             <legend>Login</legend>
             <form action="" method="post">{% csrf_token %}
-                <div class="inlog">{{ form.as_p }}</div>
-                <button class = "btn" type="submit">Signup</button>
+                <div class="inlog">{{ form|crispy }}</div>
+                <button class = "btn btn-success" type="submit">Signup</button>
             </form>
         </fieldset>
     </div>
